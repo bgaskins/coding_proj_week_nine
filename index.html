@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Website</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"></head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+<body>
+
+<!-- Responsive navigation bar with set bg-info(blue). It sticks to the top with sticky-top-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
+    <a class="navbar-brand" href="index.html">Learn Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a> 
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a> 
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Using modals for added content-->
+
+    <!-- Left side modal-->
+  <div class="modal fade" id="myModalLeft" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Hello!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--Modal content-->
+        <div class="modal-body">
+          I'm the modal on the left side.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Right side modal -->
+    <div class="modal fade" id="myModalRight" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Hello!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!--Modal content-->
+            <div class="modal-body">
+              I'm the modal on the right side.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- Home -- First page content header.-->
+<div class="container text-center mb-4 mt-4 p-4">
+    <h1>Bootstrap Learning Resources</h1>
+    <p>Find all of the answers to your bootstrap questions with these sources.</p>
+</div>
+
+
+
+<!-- Bootstrap table with rows of learning resources-->
+<div class="container mt-4 mb-4 p-4">
+    <h2>Bootstrap Help</h2>
+    <table class="table">
+        <thead>
+            <!-- Headers-->
+            <tr>
+                <th>#</th>
+                <th>Topic</th>
+                <th>Source</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows of numbered resource names and links-->
+            <tr>
+                <td>1</td>
+                <td>Get Bootstrap</td>
+                <td><a href="https://getbootstrap.com/">https://getbootstrap.com</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bootstrap Get Started</td>
+                <td><a href="https://www.w3schools.com/bootstrap/bootstrap_get_started.asp">https://www.w3schools.com/bootstrap/bootstrap_get_started.asp</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bootstrap 4 | Introduction</td>
+                <td><a href="https://www.geeksforgeeks.org/bootstrap-4-introduction/?ref=lbp">https://www.geeksforgeeks.org/bootstrap-4-introduction/?ref=lbp</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bootstrap 4 Tutorial</td>
+                <td><a href="https://www.w3schools.com/bootstrap4/default.asp">https://www.w3schools.com/bootstrap4/default.asp</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Buttons for modals within columns. Margins, -->
+<div class="container">
+    <div class="row">
+        <div class="col mt-4 mb-4 p-4">
+            <!-- Button for left modal. Color is the success alert green -->
+            <button type="button" class="btn btn-success btn-block w-75" data-toggle="modal" data-target="#myModalLeft">
+                Click me, I'm a modal!
+            </button>
+        </div>
+        <div class="col mt-4 mb-4 p-4">
+            <!-- Button for right modal. Color is the success alert green -->
+            <button type="button" class="btn btn-success btn-block w-75" data-toggle="modal" data-target="#myModalRight">
+                Click me, I'm a modal, too!
+            </button>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Home -- First page content lower signup-->
+<div class="container text-center mt-4 mb-4 p-4">
+    <h1>Want more help?</h1>
+    <p>Leave your information for Bootstrap updates, lessons and tricks.</p>
+</div>
+
+
+<!-- Bootstrap form for signup-->
+<div class="container">
+    <form class="mx-auto p-4 mb-4 w-50">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I agree to receive emails from Learn Bootstrap.</label>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer mt-4">
+    <div class="container">
+        Copyright 2023 | Learn Bootstrap
+    </div>
+</footer>
+
+<!-- Add Bootstrap CSS/JS/Popper scripts -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

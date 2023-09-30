@@ -1,0 +1,24 @@
+{
+  "name": "coding_proj_week_nine",
+  "version": "1.0.0",
+  "description": "website built with bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgaskins/coding_proj_week_nine.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "web",
+    "development"
+  ],
+  "author": "bryan gaskins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgaskins/coding_proj_week_nine/issues"
+  },
+  "homepage": "https://github.com/bgaskins/coding_proj_week_nine#readme"
+}
