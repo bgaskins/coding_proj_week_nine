@@ -1,3 +1,12 @@
+<!--
+Create a new website using HTML and Bootstrap. The website must include the following:
+-- At least 2 pages.
+-- A Bootstrap navbar, table, and form.
+-- Bootstrap grid used throughout to format elements
+-- Elements should stack vertically when the window is small
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +26,13 @@
             background-color: #f8f9fa;
             text-align: center;
             padding: 20px 0;
+        }
+        table {
+            table-layout: fixed;
+            border-spacing: 0;
+        }
+        td {
+            word-wrap: break-word;
         }
     </style>
 <body>
@@ -99,7 +115,6 @@
         <thead>
             <!-- Headers-->
             <tr>
-                <th>#</th>
                 <th>Topic</th>
                 <th>Source</th>
             </tr>
@@ -107,22 +122,18 @@
         <tbody>
             <!-- Rows of numbered resource names and links-->
             <tr>
-                <td>1</td>
                 <td>Get Bootstrap</td>
                 <td><a href="https://getbootstrap.com/">https://getbootstrap.com</a></td>
             </tr>
             <tr>
-                <td>2</td>
                 <td>Bootstrap Get Started</td>
                 <td><a href="https://www.w3schools.com/bootstrap/bootstrap_get_started.asp">https://www.w3schools.com/bootstrap/bootstrap_get_started.asp</a></td>
             </tr>
             <tr>
-                <td>3</td>
                 <td>Bootstrap 4 | Introduction</td>
                 <td><a href="https://www.geeksforgeeks.org/bootstrap-4-introduction/?ref=lbp">https://www.geeksforgeeks.org/bootstrap-4-introduction/?ref=lbp</a></td>
             </tr>
             <tr>
-                <td>4</td>
                 <td>Bootstrap 4 Tutorial</td>
                 <td><a href="https://www.w3schools.com/bootstrap4/default.asp">https://www.w3schools.com/bootstrap4/default.asp</a></td>
             </tr>
@@ -133,13 +144,13 @@
 <!--Buttons for modals within columns. Margins, -->
 <div class="container">
     <div class="row">
-        <div class="col mt-4 mb-4 p-4">
+        <div class="col-12 col-md-6 mt-4 mb-4 p-4 text-center">
             <!-- Button for left modal. Color is the success alert green -->
             <button type="button" class="btn btn-success btn-block w-75" data-toggle="modal" data-target="#myModalLeft">
                 Click me, I'm a modal!
             </button>
         </div>
-        <div class="col mt-4 mb-4 p-4">
+        <div class="col-12 col-md-6 mt-4 mb-4 p-4 text-center">
             <!-- Button for right modal. Color is the success alert green -->
             <button type="button" class="btn btn-success btn-block w-75" data-toggle="modal" data-target="#myModalRight">
                 Click me, I'm a modal, too!
